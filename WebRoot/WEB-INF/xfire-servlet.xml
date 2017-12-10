@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN//EN" "http://www.springframework.org/dtd/spring-beans.dtd">
+<beans>
+  <import resource="classpath:org/codehaus/xfire/spring/xfire.xml" />
+  
+  <bean class="org.springframework.web.servlet.handler.SimpleUrlHandlerMapping">
+    <property name="urlMap">
+      <map>
+        <entry key="/CSLWebService"><ref bean="CSLXfireExporter"/></entry>
+        <entry key="/UVSS/UVSSWebService"><ref bean="UVSSXfireExporter"/></entry>
+      </map>
+    </property>
+  </bean>
+  
+  <bean id="CSLXfireExporter" class="org.codehaus.xfire.spring.remoting.XFireExporter">
+    <property name="serviceFactory"><ref bean="xfire.serviceFactory"/></property>
+    <property name="xfire"><ref bean="xfire"/></property>
+    <property name="serviceBean"><ref bean="cslWebService"/></property>
+    <property name="serviceClass"><value>cn.lhkj.webservice.CslWebService</value></property>
+  </bean>
+  <bean id="UVSSXfireExporter" class="org.codehaus.xfire.spring.remoting.XFireExporter">
+    <property name="serviceFactory"><ref bean="xfire.serviceFactory"/></property>
+    <property name="xfire"><ref bean="xfire"/></property>
+    <property name="serviceBean"><ref bean="uvssWebService"/></property>
+    <property name="serviceClass"><value>cn.lhkj.webservice.UVSSWebService</value></property>
+  </bean>
+  
+</beans>

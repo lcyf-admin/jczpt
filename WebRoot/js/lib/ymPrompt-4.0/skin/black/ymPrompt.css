@@ -1,0 +1,69 @@
+﻿/*container*/
+#ym-window{
+	background:#fff;overflow:hidden;
+	font-size:12px;font-family:'宋体'
+}
+
+.ym-tl{padding-left:3px;background:#333 url(data:image/png;base64,R0lGODlhBAAZALMAAHp6fnJydmtrc2ZmZl9faFtbY1FRVUNDSTg4PTMzMzAwOioqMCgoKyUlKQAAAAAAACH5BAAHAP8ALAAAAAAEABkAAAQpkEgCKgg4iC2GHxNRjIVhGkd6ICyivHD8JnRNL3iu73zO/MBfY9gIRgAAOw==) no-repeat 0 0}
+.ym-tr{padding-right:3px;background:#333 url(data:image/png;base64,R0lGODlhBAAZANUAAMnJyoqKkIWFjH19gXZ2e3JydnJyd25udG1tcmtrcWpqbmZma2RkaWNjamJiamJiZ15eZF1dYltbX1hYXVVVWlBQVUxMUktLUEZGTENDSD09QTg4PTg4Pjc3Pzc3PDY2OzU1PTQ0OzQ0OjQ0OTQ0PDMzOjMzODIyNzIyNjIyODExNDExNjAwNDAwMy8vMi8vNC4uMi0tMiwsMCwsMSsrMCsrLyoqLioqMCkpLScnLCYmKwAAAAAAAAAAAAAAAAAAACH5BAAHAP8ALAAAAAAEABkAAAZOQIdFAwgIGJuBAcEhHBaeguLhSTAingZk8pFQKp8LJiPqhM6ltFqdap/e75V8TpfHYibWbGZqyWQmLjU1JjA2NiYzODgmNzk5KTQ6OidBADs=) no-repeat right 0;}
+.ym-tc{background:#333 url(data:image/png;base64,R0lGODlhAQAZALMAAHt7gnJydmtrc2ZmZl9faFtbY1NTWUNDSTg4PTMzMzAwOioqMCgoKyUlKQAAAAAAACH5BAAHAP8ALAAAAAABABkAAAQQkIAgBinmIMVV+ksYMg0TAQA7) repeat-x 0 0;overflow:hidden;height:25px;line-height:25px;}
+.ym-ttc{height:3px}
+.ym-header-text{font-size:12px;font-weight:bold;color:#fff;margin-left:5px;float:left}
+.ym-header-tools{float:right;margin-top:5px}
+
+/*body*/
+.ym-ml{background:#5F5F68;padding-left:2px}
+.ym-mr{background:#5F5F68;padding-right:2px}
+.ym-mc{background:#fff;padding:0}
+.ym-body{overflow:auto;padding:0;font-size:12px;}
+.ym-header-tools strong{display:none}
+
+/*button*/
+.ym-btn{text-align:center;background:#fff;}
+
+/*footer*/
+.ym-bl{background:#5F5F68;padding-left:2px}
+.ym-br{background:#5F5F68;padding-right:2px}
+.ym-bc{background:#5F5F68;height:2px;font-size:2px}
+
+.ymPrompt_alert{
+	padding-left:90px;
+	background:url(images/info.gif) no-repeat 20px 50%
+}
+.ymPrompt_succeed{
+	padding-left:90px;
+	background:url(images/right.gif) no-repeat 20px 50%
+}
+.ymPrompt_error{
+	padding-left:90px;
+	background:url(images/err.gif) no-repeat 20px 50%
+}
+.ymPrompt_confirm{
+	padding-left:90px;
+	background:url(images/ask.gif) no-repeat 20px 50%
+}
+.ymPrompt_alert .ym-content,.ymPrompt_succeed .ym-content,.ymPrompt_error .ym-content,.ymPrompt_confirm .ym-content{padding:50px 3px 0}
+/*图标公共定义*/
+.ym-header-tools div{
+	cursor:pointer;
+	width:15px;height:15px;float:left;margin:0 1px;
+	background:url(data:image/png;base64,R0lGODlhPAAPANUAAP////r6+vLy8uTk5Nvb29ra2tnZ2YeHh4KCgoGBgX9/f35+fnt7e3h4eHd3d3Z2dnV1dXR0dHNzc29vb2ZmZmRkZGNjY2JiYl9fX11dXVtbW1lZWVdXV1VVVVRUVEdHRz8/Pzs7OzIyMv///wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACH5BAEHACMALAAAAAA8AA8AAAb/wJFoSCwSR0KjUoRcKpvO4ii0QVivWMQmRM16t10vFlwVX8GKtHqt5qoL8Dg8kXCz7wo7fs2VSAiAgYEREX1+BYKDhSF+jY6Oho+SXBUVBpeYmBYWlJUFF6ChBZudlaanlaUDDqEOA6FcGh0FHbW2sx0asXGZBh4GubG3w7W6IbIdEwMTHsrMHsYcHwUf1dbTHxxcHAaJgB8G2dvX5NXaIdLVFAIMAhTW5xwgBSD19vMg8QYg+/b7+/HuCawX0F6DAA3uncsQogCXh1wcMgyRwUDDXpcocmFIQI4cjSBDYADwAACGhxMpNIT40KHKEBQsspQJk4tKhyxXvnw58mRPaJtcJoTo6BFOCKFHaT6kiVQo0aJHg3IZcJILhgFSQ0CIMgQCFwgFMBog4lUrVxFlt3Itu+DsAi5tub4NETfK3LpO5lY4wLev3wMVKP0dHDjE3sF+Cx9GzDfwlJw5kUCO/HjyQ8mWLwcBADs=) no-repeat 0 0;
+}
+.ymPrompt_close{
+	background-position:-45px 0 !important;
+}
+.ymPrompt_max{
+	background-position:0 0 !important;
+}
+.ymPrompt_min{
+	background-position:-30px 0 !important;
+}
+.ymPrompt_normal{
+	background-position:-15px 0 !important;
+}
+/*取消确认按钮样式*/
+input.btnStyle{
+	background:url(images/btn_bg.gif) no-repeat;
+	width:80px;height:21px;line-height:21px;
+	font-size:12px;color:#fff;border:0;margin:10px 0
+}

@@ -1,0 +1,185 @@
+/*css��ʽ����*/
+body,h1,h2,h3,h4,h5,h6,dl,dt,dd,ul,ol,li,th,td,p,blockquote,pre,form,fieldset,legend,input,button,textarea,hr,tr{
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+	list-style: none;
+}
+
+#indexBody { background: url(../../../images/index/bg.png) #102463;}
+#header    { 
+	background: url(../../../images/index/header.png) repeat-x;
+	position: relative;
+	height: 88px;
+	z-index: 100;
+	width: 100%;
+    background-size: 100% 100%;
+}
+#header2 {
+    background: url(../../../images/index/header3.png) repeat-x;
+    position: relative;
+    height: 88px;
+    z-index: 100;
+    width: 100%;
+    background-size: 100% 100%;
+}
+
+#header img { position: absolute;top: 50px;left: 32px; }
+#more       { background-color: #2F323F;height: 20px;float: right; }
+#topMenu>li {
+	color: #a5abbd;
+	float: left;
+	height: 30px;
+	position: relative;
+	margin-right: 15px;
+	cursor: pointer;
+}
+#topMenu>li:hover { color: #ff9900; }
+#topMenu>li>p     { width: 18px;height: 13px;display: inline-block; }
+#nav              { 
+	background: url(../../../images/index/menu.png) no-repeat; 
+	cursor: pointer;
+	position: absolute;
+    top: 38px;
+    left: 284px;
+	width: 72px;
+	height: 38px;
+	display: inline-block;
+}
+
+#nav span{
+	margin-left: 20px;
+	line-height: 38px;
+	font-size: 14px;
+	color: #fff;
+	font-weight: bold;
+}
+
+.grad {
+  background: -webkit-linear-gradient(top,rgba(39, 80, 168, 0.69),rgba(15, 33, 86, 0.67)); /* Safari 5.1 - 6 */
+  background: -o-linear-gradient(bottom,rgba(39, 80, 168, 0.69),rgba(15, 33, 86, 0.67)); /* Opera 11.1 - 12*/
+  background: -moz-linear-gradient(bottom,rgba(39, 80, 168, 0.69),rgba(15, 33, 86, 0.67)); /* Firefox 3.6 - 15*/
+  background: linear-gradient(to bottom, rgba(39, 80, 168, 0.69), rgba(15, 33, 86, 0.67));/* ��׼���﷨ */
+}
+.lk-panel{
+	border:2px solid #4463c2;
+	border-radius:10px;
+	padding: 0;
+}
+
+.Equipment     { margin-top: 8px;cursor: pointer; }
+.Equipment img { margin-left:14px;}
+
+.photo   {
+	width: 228px;
+	height: 270px;
+	border: 2px solid #ddd;
+	border-radius: 10px;  
+}
+.photo p { 
+  font-size: 20px;
+  color: #ff9900;
+  text-align: center;
+  height: 50px;
+  line-height: 50px;
+}
+
+
+.danger{
+	background-color: #ff6600;
+	filter:alpha(opacity=20); /*IE�˾���͸����50%*/
+	-moz-opacity:0.2; /*Firefox˽�У�͸����50%*/
+	opacity:0.2;/*����͸����50%*/
+	position: absolute;
+}
+
+.dangerImg{
+	 width:37px; 
+	 height: 38px;
+	 position: absolute;
+	 top: 7px;
+	 left: 182px;
+	 background: url(../../../images/index/warn.png); 
+}
+
+.fun{
+	width: 228px;
+	height: 36px;
+	background: url(../../../images/index/Equipment_fun.png) no-repeat;
+	text-align: center;
+	color: #cccccc;
+	line-height: 36px;
+	font-size: 16px;
+}
+
+.dangerFun{
+	width: 228px;
+	height: 36px;
+	background: url(../../../images/index/Equipment_fun.png) no-repeat #3C3245;
+	text-align: center;
+	color: #cccccc;
+	line-height: 36px;
+	font-size: 16px;
+}
+
+
+.lk-panel ul li{
+	line-height: 45px;
+	font-size: 16px;
+	color: #ececec;
+}
+.lk-panel ul li span{
+	padding: 0px 33px;
+}
+
+h3{
+	height: 46px;
+	border-bottom: 2px solid #4463c2;
+	font-size: 16px;
+	color: #f8b661;
+	position: relative;
+}
+.title      { margin-left: 40px;line-height: 48px; }
+.title_icon { position: absolute;left: 15px;top: 14px; }
+.more:HOVER { color: red;}
+
+.showTable   { width: 100%;border-collapse:collapse;font-size: 1.4em}
+.showTable th{ height: 50px;line-height:50px; color:orange; text-align: right;padding-right: 20px; width: 230px;}
+.showTable td{ height: 50px;line-height:50px; color: #fff;text-align: left;padding-left: 20px;}
+
+.vehicleTable   { width: 100%;border-collapse:collapse;font-size: 1.4em}
+.vehicleTable th{ height: 45px; color:orange; text-align: right;padding-right: 15px; width: 110px;}
+.vehicleTable td{ color: #fff;text-align: left;padding-left: 5px;}
+
+.gray{ background-color:rgba(174,174,174,0.2);}
+
+.carhis{ line-height: 40px; width: 100%; }
+
+.carhis tr th{ border-bottom: 3px solid #0c1842; font-size: 16px; color: #ff9900; }
+.carhis tr td{ font-size: 16px; text-align: center; color: #cccccc; }
+.carhis a    { font-size: 16px !important;}
+
+#site{
+	display: inline-block;
+    position: absolute;
+    right: 20px;
+    bottom: 17px;
+
+}
+
+#site p{
+	display: inline-block;
+	color: #a5abbd;
+	padding-left: 5px;
+	padding-bottom: 2px;
+}
+
+
+.lk-index-link       { text-decoration:none; color: #fff; padding: 0; font-size: 19.6px; }
+.lk-index-link:focus { text-decoration:none; color: #fff; }
+.lk-index-link:hover { color: #f81d1d; text-decoration:none; }
+
+
+
+
+

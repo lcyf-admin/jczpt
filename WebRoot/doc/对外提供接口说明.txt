@@ -1,0 +1,7 @@
+1、车证合一数据接口
+	 提供两种接口调用方式：
+	（1）post提交方式
+		url=http://[ip]:8888/jczpt/vehicle_czhy.action
+		data=[json参数]
+2、车底扫描接口地址：
+	http://[ip]:8888/jczpt/xfire/UVSS/UVSSWebService?WSDL

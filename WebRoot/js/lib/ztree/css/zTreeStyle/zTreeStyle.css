@@ -1,0 +1,117 @@
+/*-------------------------------------
+zTree Style
+
+version:	3.4
+author:		Hunter.z
+email:		hunter.z@263.net
+website:	http://code.google.com/p/jquerytree/
+
+-------------------------------------*/
+
+.ztree * {padding:0; margin:0; font-size: 1em; font-family: Verdana, Arial, Helvetica, AppleGothic, sans-serif}
+.ztree {margin:0; padding:5px; color:#333}
+.ztree li{padding:0; margin:0; list-style:none; line-height:14px; text-align:left; white-space:nowrap; outline:0}
+.ztree li ul{ margin:0; padding:0 0 0 18px}
+.ztree li ul.line{ background:url(./img/line_conn.gif) 0 0 repeat-y;}
+
+.ztree li a {padding:1px 3px 0 0; margin:0; cursor:pointer; height:17px; color:#333; background-color: transparent;
+	text-decoration:none; vertical-align:top; display: inline-block}
+.ztree li a:hover {text-decoration:underline}
+.ztree li a.curSelectedNode {padding-top:0px; background-color:#FFE6B0; color:black; height:16px; border:1px #FFB951 solid; opacity:0.8;}
+.ztree li a.curSelectedNode_Edit {padding-top:0px; background-color:#FFE6B0; color:black; height:16px; border:1px #FFB951 solid; opacity:0.8;}
+.ztree li a.tmpTargetNode_inner {padding-top:0px; background-color:#316AC5; color:white; height:16px; border:1px #316AC5 solid;
+	opacity:0.8; filter:alpha(opacity=80)}
+.ztree li a.tmpTargetNode_prev {}
+.ztree li a.tmpTargetNode_next {}
+.ztree li a input.rename {height:14px; width:80px; padding:0; margin:0;
+	font-size:12px; border:1px #7EC4CC solid; *border:0px}
+.ztree li span {line-height:16px; margin-right:2px}
+.ztree li span.button {line-height:0; margin:0; width:16px; height:16px; display: inline-block; vertical-align:middle;
+	border:0 none; cursor: pointer;outline:none;
+	background-color:transparent; background-repeat:no-repeat; background-attachment: scroll;
+	background-image:url("./img/zTreeStandard.png"); *background-image:url("./img/zTreeStandard.gif")}
+
+.ztree li span.button.chk {width:13px; height:13px; margin:0 3px 0 0; cursor: auto}
+.ztree li span.button.chk.checkbox_false_full {background-position:0 0}
+.ztree li span.button.chk.checkbox_false_full_focus {background-position:0 -14px}
+.ztree li span.button.chk.checkbox_false_part {background-position:0 -28px}
+.ztree li span.button.chk.checkbox_false_part_focus {background-position:0 -42px}
+.ztree li span.button.chk.checkbox_false_disable {background-position:0 -56px}
+.ztree li span.button.chk.checkbox_true_full {background-position:-14px 0}
+.ztree li span.button.chk.checkbox_true_full_focus {background-position:-14px -14px}
+.ztree li span.button.chk.checkbox_true_part {background-position:-14px -28px}
+.ztree li span.button.chk.checkbox_true_part_focus {background-position:-14px -42px}
+.ztree li span.button.chk.checkbox_true_disable {background-position:-14px -56px}
+.ztree li span.button.chk.radio_false_full {background-position:-28px 0}
+.ztree li span.button.chk.radio_false_full_focus {background-position:-28px -14px}
+.ztree li span.button.chk.radio_false_part {background-position:-28px -28px}
+.ztree li span.button.chk.radio_false_part_focus {background-position:-28px -42px}
+.ztree li span.button.chk.radio_false_disable {background-position:-28px -56px}
+.ztree li span.button.chk.radio_true_full {background-position:-42px 0}
+.ztree li span.button.chk.radio_true_full_focus {background-position:-42px -14px}
+.ztree li span.button.chk.radio_true_part {background-position:-42px -28px}
+.ztree li span.button.chk.radio_true_part_focus {background-position:-42px -42px}
+.ztree li span.button.chk.radio_true_disable {background-position:-42px -56px}
+
+.ztree li span.button.switch {width:18px; height:18px}
+.ztree li span.button.root_open{background-position:-92px -54px}
+.ztree li span.button.root_close{background-position:-74px -54px}
+.ztree li span.button.roots_open{background-position:-92px 0}
+.ztree li span.button.roots_close{background-position:-74px 0}
+.ztree li span.button.center_open{background-position:-92px -18px}
+.ztree li span.button.center_close{background-position:-74px -18px}
+.ztree li span.button.bottom_open{background-position:-92px -36px}
+.ztree li span.button.bottom_close{background-position:-74px -36px}
+.ztree li span.button.noline_open{background-position:-92px -72px}
+.ztree li span.button.noline_close{background-position:-74px -72px}
+.ztree li span.button.root_docu{ background:none;}
+.ztree li span.button.roots_docu{background-position:-56px 0}
+.ztree li span.button.center_docu{background-position:-56px -18px}
+.ztree li span.button.bottom_docu{background-position:-56px -36px}
+.ztree li span.button.noline_docu{ background:none;}
+
+.ztree li span.button.ico_open{margin-right:2px; background-position:-110px -16px; vertical-align:top; *vertical-align:middle}
+.ztree li span.button.ico_close{margin-right:2px; background-position:-110px 0; vertical-align:top; *vertical-align:middle}
+.ztree li span.button.ico_docu{margin-right:2px; background-position:-110px -32px; vertical-align:top; *vertical-align:middle}
+.ztree li span.button.edit {margin-right:2px; background-position:-110px -48px; vertical-align:top; *vertical-align:middle}
+.ztree li span.button.remove {margin-right:2px; background-position:-110px -64px; vertical-align:top; *vertical-align:middle}
+
+.ztree li span.button.ico_loading{margin-right:2px; background:url(./img/loading.gif) no-repeat scroll 0 0 transparent; vertical-align:top; *vertical-align:middle}
+
+ul.tmpTargetzTree {background-color:#FFE6B0; opacity:0.8; filter:alpha(opacity=80)}
+
+span.tmpzTreeMove_arrow {width:16px; height:16px; display: inline-block; padding:0; margin:2px 0 0 1px; border:0 none; position:absolute;
+	background-color:transparent; background-repeat:no-repeat; background-attachment: scroll;
+	background-position:-110px -80px; background-image:url("./img/zTreeStandard.png"); *background-image:url("./img/zTreeStandard.gif")}
+
+ul.ztree.zTreeDragUL {margin:0; padding:0; position:absolute; width:auto; height:auto;overflow:hidden; background-color:#cfcfcf; border:1px #00B83F dotted; opacity:0.8; filter:alpha(opacity=80)}
+.zTreeMask {z-index:10000; background-color:#cfcfcf; opacity:0.0; filter:alpha(opacity=0); position:absolute}
+
+/* level style*/
+/*.ztree li span.button.level0 {
+	display:none;
+}
+.ztree li ul.level0 {
+	padding:0;
+	background:none;
+}*/
+
+
+ul.ztree   {margin-top: 10px;border: 1px solid #617775;background: #fff;width:100%;overflow:auto;}
+ul.myztree {margin-top: 10px;border: 0;background: #fff;overflow: auto;}
+.ztree li span.button.rootIcon_ico_open{margin-right:2px;
+background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAIGNIUk0AAHolAACAgwAA+f8AAIDpAAB1MAAA6mAAADqYAAAXb5JfxUYAAAHKSURBVHjapJKxSxtRHMc/OaHL4RBUKBUEFzkl0m5HoV3yFxQXO0ipKMWry0GHEto4JNQbekKn6JBgcKkOERdT6NKpQ0fj8M4SuCUWS4ZC6PGKqbwOd0nvxLSWfuH48X2/3+/z7r33SxHJcZwSYEV288HXAyK/Of3m01OukFLqt3EcR0kplZRS1XMPlbBNpTonStimErZZGgTQ4gvtdpvW23UmpY+xWoCTj2EEaxAkAfj+rsTPxnuMJy/hrAk/JJw1Qz8A0gfc7hyREh8wHj+DloDhMbzaDgyPQUuE61dANABhm6VJ6WPMr4B/HDZXN/h28w5edSOE+Mdh/hJEi4xlzC1y4TdgZBxvbwsyWe4+D6O3twUj41z4DYy5xQREAyxjeY3z0yZDoxN4+9t0p+5jLK0DhDGTxdvfZmh0gvPTJsbyWu+J0TqyW/XKBW5M38Or70Imy6z1OnFRfUh9N6wrF+jIbrWX1w8XZmrCNpUo59SfJMo5JWxTHS7M1AA9Pki667qJ4kql0v/icl1XAfrlQQrS6TTXUVQX9F9BKZWc6Wso3qPxn0oBUwD5fP6FruuP/tYQBMFOsVh8Ff3J51Qsd+sfNv7SO8qvAQAhhwxt3MdVpwAAAABJRU5ErkJggg==) no-repeat scroll 0 0 transparent;
+vertical-align:top; *vertical-align:middle}
+.ztree li span.button.rootIcon_ico_close{margin-right:2px;
+background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAIGNIUk0AAHolAACAgwAA+f8AAIDpAAB1MAAA6mAAADqYAAAXb5JfxUYAAAHfSURBVHjapJI/SNxgGIefCxjUWLiCZjhucCqC9EiHDOpw4CIIHW5oHYqdHHodnARPig6BkqMOgsMllA5SoZNeh4IgpR0KlUKFBGtADhQXDzGSDhpbSOHr0Nw113qtpT/4ht/3vu/z/XnfFLEMw6gAxdhar9TbxN76+ODWQy6REOKnMQxDBEEggiAQd5ZeCt12hBsJoduO0G2n0g4gJTd83+fJ+yMOu/qZn9D4cALzExpAsR2kBfDUC3lz9I3ZgsZ+AF++wn4As4X2kCbg07WbvDtJMT2usedDbwe8eO3S2wF7PkyPXw6RAHTbqRx29TM1quEdR/TJsLzhkpM/s7zh0ieDdxwxNfo7RIpNcXJ4kN36OZlOePbWJa9C5d4IefWHz3TCbv2cyeHBFogEFOfGchychmR7JFa3PEauRywWNGRZZrGgkVdhdcsj2yNxcBoyN5ZrtBgpujhbMTd3GMp2s7ZdI6/C0l295aMakLXtGkPZbszNHaKLs5VGXBlYqK7rtiNmqo74k2aqjtBtRwwsVNcBJTlIimmaLcmWZTVXUqZpCkD5dZDCdDrNVRTnhc0uCCFaZ/oKStZI/KdSwA2AUqn0SFGU+38rCMPweblcfhzfpJZKxDL/cHC98ZTvAwAfngtDTb26xgAAAABJRU5ErkJggg==) no-repeat scroll 0 0 transparent;
+vertical-align:top; *vertical-align:middle}
+
+.ztree li span.button.pIcon_ico_docu{margin-right:2px;
+background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAIGNIUk0AAHolAACAgwAA+f8AAIDpAAB1MAAA6mAAADqYAAAXb5JfxUYAAAKASURBVHjajJPdS9NRGMc/e9Wl29p+ippONjNQm+2qtCbCJBAmCFIXXgRdCuLFgrz2D7ALRdh9eJNQIAZjSdiFadpG6sgmUr7g8q2cP5co7uV3unBGrowOPJwDz/fz5TzPeY4qEuBfqy67f7pIoL4okZBxGi0sGi0sJmSc/2OgAXqAegC1mg6rzYvV5kWtpiOrqc9qNH8YnBzRU1nnHjJKRJQkwzotbSapDZPUhk5Lm5Jk2CgRqaxzD50c0XPGac8OoVlCRbYp7LfekYy/ePBt7QnkpQEoq6ah2Pa4QW+9x9r724RmCTV5cm7Q3c9cNMx4cm8EvdFMudMHqTCkwpTX+tAbzST3RoiGGe/uZy63BMf8KD6LRNHu+gBkViEVgtRKNkKQWWV3bQCLRNH8KD7AAaAKPafKXMIXqcJNoaUFnT6OkpwF5Jx+X0atbyCVtHK4P8FebIqDHa5qt79isJaCEGmUzA/SSZnMyXdQ4jnvlUaDjJLRIUQajQq2v2JQATp3BY3eVh5ed+JxNVJVYq8hnV46x2u1NezEllh4y8riR94EXvF0KsYMgAowAMVBP0E51i4Smy5xsCEJeRUhryIONiSR2HQJOdYugn6CQHGWUWkjAQRwfJigtqScVoPRw2H8JYntBSxl1aDREo8tYSp1UWj1cK1+rHX6GbZCEx/OzYGi0JRnlliPPOL1GKGyK1g89+uqAeZnlj5vbU7s322fuHnJLKFs7DXBqQGRwGkABf5e+vKhE3D4exncitrFVtQu/L0MAo586PT30gcU/OJ+M9ABBdna1F0tNC9PIpYnEV0tNGdnxpDV6M441UXf+YYXg7eWOwCBKNORAMd/0/0cACfh+nCNBcXiAAAAAElFTkSuQmCC) no-repeat scroll 0 0 transparent;
+vertical-align:top; *vertical-align:middle}
+
+.ztree li span.button.zTreeCNode_ico_docu{margin-right:2px; background: url(../../../../images/extIcon/expand-members.gif) no-repeat scroll 0 0 transparent; vertical-align:top; *vertical-align:middle}
+
+.ztree li span.button.zTreePNode_ico_docu{margin-right:2px; background: url(../../../../images/extIcon/expand-all.gif) no-repeat scroll 0 0 transparent; vertical-align:top; *vertical-align:middle}
+
+.ztree li span.button.zTreeUserNode_ico_docu{margin-right:2px; background: url(../../../../images/extIcon/user.gif) no-repeat scroll 0 0 transparent; vertical-align:top; *vertical-align:middle}
