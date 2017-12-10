@@ -1,2 +1,0 @@
-<link type="text/css" rel="stylesheet" href="<%=basePath%>js/lib/ymPrompt-4.0/skin/black/ymPrompt.css"  />
-<script type="text/javascript" src="<%=basePath%>js/lib/ymPrompt-4.0/ymPrompt.js" charset="UTF-8"></script>
